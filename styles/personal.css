@@ -57,7 +57,7 @@ li a{
 
 /* banner related styles */
 
-.banner{
+.banner, .about{
     max-width: 1440px;
     margin: 0px auto;
     /* background-color: bisque; */
@@ -67,18 +67,25 @@ li a{
     justify-content: space-around;
 }
 
-.banner-image{
+.banner-image, 
+.about-image{
     max-width: 532px;
 }
 
-.banner-image img{
+.banner-image img,
+.about-image img{
     width: 100%;
 }
 
-#title-first{
+#title-first,
+.about-title{
     color: rgba(54, 57, 88, 1);
     font-size: 5rem;
     font-weight: 700px;
+}
+
+.about-title{
+    margin-bottom: 27px;
 }
 
 #title-second{
@@ -88,7 +95,8 @@ li a{
     margin-bottom: 13px;
 }
 
-.banner-description{
+.banner-description,
+.about-description{
     font-size: 1rem;
     color: rgba(62, 62, 62, 1);
     margin-bottom: 36px;
@@ -121,5 +129,30 @@ li a{
 
     .banner-image img{
         width: 100%;
+    }
+}
+
+
+
+/* Responsive for medium device */
+
+@media screen and (min-width: 577px) and (max-width: 992px){
+    .banner{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .navbar{
+        margin-bottom: 250px;
+    }
+
+     ul{
+        text-align: center;
+        margin: 150px;
+        margin-top: 20px;
+    }
+
+    .navbar li{
+        margin-left: 40px;
     }
 }
