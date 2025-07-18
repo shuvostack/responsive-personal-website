@@ -68,7 +68,7 @@ li a{
 }
 
 .banner-image{
-    width: 532px;
+    max-width: 532px;
 }
 
 .banner-image img{
@@ -92,4 +92,34 @@ li a{
     font-size: 1rem;
     color: rgba(62, 62, 62, 1);
     margin-bottom: 36px;
+}
+
+
+/* responsive for phone */
+
+@media screen and (max-width: 576px){
+    ul, .banner{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .navbar{
+        margin-bottom: 200px;
+    }
+
+    ul{
+        text-align: center;
+        margin: 150px;
+        margin-top: 20px;
+    }
+
+    .banner{
+        justify-items: center;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .banner-image img{
+        width: 100%;
+    }
 }
