@@ -133,9 +133,9 @@ li a{
 }
 
 .project-card-container{
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr); */
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* display: flex; */
     gap: 20px;
     max-width: 1440px;
     margin: 0px auto;
@@ -218,6 +218,34 @@ li a{
 }
 
 
+/* social media section related styles */
+
+.social{
+    text-align: center;
+}
+
+.social-title-1{
+    color: rgba(105, 104, 113, 1);
+    font-size: 1.5rem;
+    font-weight: 400px;
+    margin-bottom: 19px;
+}
+
+.social-title-2{
+    color: rgba(54, 57, 88, 1);
+    font-size: 2.25rem;
+    font-weight: 700px;
+    margin-bottom: 20px;
+}
+
+.social-icon{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-bottom: 70px;
+}
+
+
 
 /* responsive for phone */
 
@@ -284,8 +312,8 @@ li a{
     }
 
     .project-card-container{
-        /* grid-template-columns: repeat(1, 1fr); */
-        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+        /* flex-direction: column; */
         margin: 20px;
         /* padding: 20px; */
         padding-bottom: 100px;
@@ -317,6 +345,19 @@ li a{
         width: 200px;
         font-size: 3rem;
         margin-top: 20px;
+    }
+
+
+    /* social media */
+
+
+    .social-title-1{
+        font-size: 1rem;
+        font-weight: 400px;
+    }
+
+    .social-title-2{
+        font-size: 1.25rem;
     }
 }
 
@@ -360,8 +401,8 @@ li a{
     /* project */
 
     .project-card-container{
-        /* grid-template-columns: repeat(1, 1fr); */
-        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+        /* flex-direction: column; */
     }
 
 
